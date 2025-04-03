@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+
+<body>
+    <button id="home-button">Back to recipes</button>
+    <div id="add-recipe-form">
+        <h2>Add a New Recipe</h2>
+        <input type="text" id="title" placeholder="Title" required><br>
+        <textarea id="ingredients" placeholder="Ingredients (newline-separated)" required></textarea><br>
+        <textarea id="steps" placeholder="Steps (newline-separated)" required></textarea><br>
+        <button id="submit-recipe">Submit Recipe</button>
+        <div id="message"></div>
+    </div>
+    <script src="addrecipe.js"></script>
+</body>
+
+</html>
